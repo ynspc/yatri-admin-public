@@ -18,6 +18,14 @@ pipeline {
         sh '''
           cd /yatri/yatri-admin
           pwd
+          git branch
+          git status
+          git remote -v
+          git pull origin master
+          sh npm install
+          npm run build
+          sudo pm2 list
+          sudo pm2 list  restart 5
         '''
         sh "cd /yatri/yatri-admin"
         sh "pwd"
