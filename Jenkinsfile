@@ -21,7 +21,7 @@ pipeline {
           git branch
           git status
           git remote -v
-          git pull origin master
+          sudo git pull origin master
           sh npm install
           npm run build
           sudo pm2 list
