@@ -2,7 +2,7 @@ import React from 'react'
 
 const DashboardPage = () => {
   return (
-    <div>Dashboard Page</div>
+    <div>Dashboard Page Updated via cicd in public</div>
   )
 }
 
