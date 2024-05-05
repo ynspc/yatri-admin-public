@@ -26,6 +26,10 @@ pipeline {
             git config --global user.name "${GIT_USERNAME}"
             git config --global user.password "${GIT_PASSWORD}"
             git pull origin master
+            npm install
+            npm run build
+            sudo pm2 list
+            sudo pm2 restart 5
           '''
           // git push --set-upstream origin master
         }
