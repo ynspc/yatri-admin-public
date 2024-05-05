@@ -16,6 +16,7 @@ pipeline {
         // env.PATH="${env.NODEJS_HOME};${env.PATH}"
         // sh "npm -v"
         sh "cd /yatri/yatri-admin"
+        sh "pwd"
         sh "./deploy.sh"
         // sh "git branch"
         // sh "git status"
