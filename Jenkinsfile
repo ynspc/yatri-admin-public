@@ -15,6 +15,10 @@ pipeline {
         // on windows
         // env.PATH="${env.NODEJS_HOME};${env.PATH}"
         // sh "npm -v"
+        sh '''
+          cd /yatri/yatri-admin
+          pwd
+        '''
         sh "cd /yatri/yatri-admin"
         sh "pwd"
         sh "./deploy.sh"
