@@ -22,7 +22,7 @@ pipeline {
           git status
           git remote -v
           sudo git pull origin master
-          sh npm install
+          npm install
           npm run build
           sudo pm2 list
           sudo pm2 list  restart 5
