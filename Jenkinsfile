@@ -32,7 +32,7 @@ pipeline {
             // git config --global user.password "${GIT_PASSWORD}"
           // '''
           // git push --set-upstream origin master
-        }
+          // }
       }
     }
   }
